@@ -1,0 +1,440 @@
+EESchema Schematic File Version 2
+LIBS:panplex thermomiter-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SamacSys_Parts
+LIBS:panplex thermomiter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x04 Digit1
+U 1 1 62F84531
+P 7100 3150
+F 0 "Digit1" H 7100 3350 50  0000 C CNN
+F 1 "Conn_01x04" H 7100 2850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 7100 3150 50  0001 C CNN
+F 3 "" H 7100 3150 50  0001 C CNN
+	1    7100 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x04 Digit2
+U 1 1 62F8458A
+P 7800 2350
+F 0 "Digit2" H 7800 2550 50  0000 C CNN
+F 1 "Conn_01x04" H 7800 2050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 7800 2350 50  0001 C CNN
+F 3 "" H 7800 2350 50  0001 C CNN
+	1    7800 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3500 7000 3500
+Wire Wire Line
+	7000 3500 7000 3350
+Wire Wire Line
+	6300 3400 7100 3400
+Wire Wire Line
+	7100 3400 7100 3350
+Wire Wire Line
+	6300 3300 6850 3300
+Wire Wire Line
+	6850 3300 6850 3600
+Wire Wire Line
+	6850 3600 7200 3600
+Wire Wire Line
+	7200 3600 7200 3350
+Wire Wire Line
+	6300 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3700
+Wire Wire Line
+	6800 3700 7300 3700
+Wire Wire Line
+	7300 3700 7300 3350
+Wire Wire Line
+	6300 3100 6800 3100
+Wire Wire Line
+	6800 3100 6800 2900
+Wire Wire Line
+	6800 2900 7700 2900
+Wire Wire Line
+	7700 2900 7700 2550
+Wire Wire Line
+	6300 3000 6700 3000
+Wire Wire Line
+	6700 3000 6700 2800
+Wire Wire Line
+	6700 2800 7800 2800
+Wire Wire Line
+	7800 2800 7800 2550
+Wire Wire Line
+	6300 2900 6600 2900
+Wire Wire Line
+	6600 2900 6600 2700
+Wire Wire Line
+	6600 2700 7900 2700
+Wire Wire Line
+	7900 2700 7900 2550
+Wire Wire Line
+	6300 2800 6500 2800
+Wire Wire Line
+	6500 2800 6500 2600
+Wire Wire Line
+	6500 2600 8000 2600
+Wire Wire Line
+	8000 2600 8000 2550
+$Comp
+L GND #PWR7
+U 1 1 62F848B7
+P 5450 2050
+F 0 "#PWR7" H 5450 1800 50  0001 C CNN
+F 1 "GND" H 5450 1900 50  0000 C CNN
+F 2 "" H 5450 2050 50  0001 C CNN
+F 3 "" H 5450 2050 50  0001 C CNN
+	1    5450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR6
+U 1 1 62F8497B
+P 5500 1150
+F 0 "#PWR6" H 5500 1000 50  0001 C CNN
+F 1 "+5V" H 5500 1290 50  0000 C CNN
+F 2 "" H 5500 1150 50  0001 C CNN
+F 3 "" H 5500 1150 50  0001 C CNN
+	1    5500 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x05 ToPanplex1
+U 1 1 62F849EE
+P 5700 850
+F 0 "ToPanplex1" H 5700 1150 50  0000 C CNN
+F 1 "Conn_01x05" H 5700 550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm" H 5700 850 50  0001 C CNN
+F 3 "" H 5700 850 50  0001 C CNN
+	1    5700 850 
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5800 1050
+NoConn ~ 5700 1050
+Wire Wire Line
+	5900 1050 6450 1050
+$Comp
+L GND #PWR8
+U 1 1 62F8507B
+P 5600 1350
+F 0 "#PWR8" H 5600 1100 50  0001 C CNN
+F 1 "GND" H 5600 1200 50  0000 C CNN
+F 2 "" H 5600 1350 50  0001 C CNN
+F 3 "" H 5600 1350 50  0001 C CNN
+	1    5600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1350 5600 1050
+Wire Wire Line
+	5500 1150 5500 1050
+$Comp
+L GND #PWR9
+U 1 1 62F850F4
+P 6700 3750
+F 0 "#PWR9" H 6700 3500 50  0001 C CNN
+F 1 "GND" H 6700 3600 50  0000 C CNN
+F 2 "" H 6700 3750 50  0001 C CNN
+F 3 "" H 6700 3750 50  0001 C CNN
+	1    6700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 62F85114
+P 4800 3950
+F 0 "#PWR5" H 4800 3700 50  0001 C CNN
+F 1 "GND" H 4800 3800 50  0000 C CNN
+F 2 "" H 4800 3950 50  0001 C CNN
+F 3 "" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR3
+U 1 1 62F85134
+P 4500 3950
+F 0 "#PWR3" H 4500 3800 50  0001 C CNN
+F 1 "+5V" H 4500 4090 50  0000 C CNN
+F 2 "" H 4500 3950 50  0001 C CNN
+F 3 "" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3600 6700 3600
+Wire Wire Line
+	6700 3600 6700 3750
+Wire Wire Line
+	5100 3800 4800 3800
+Wire Wire Line
+	4800 3800 4800 3950
+Wire Wire Line
+	5100 3600 4500 3600
+Wire Wire Line
+	4500 3600 4500 3950
+$Comp
+L Conn_01x12 BuckConverter1
+U 1 1 62F84DF0
+P 5650 1750
+F 0 "BuckConverter1" H 5650 2350 50  0000 C CNN
+F 1 "Conn_01x12" H 5650 1050 50  0000 C CNN
+F 2 "Custom_PCB_Stuff:nixi-serply-custom" H 5650 1750 50  0001 C CNN
+F 3 "" H 5650 1750 50  0001 C CNN
+	1    5650 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 1050 6450 2050
+Wire Wire Line
+	6450 2050 6250 2050
+Wire Wire Line
+	6250 2050 6250 1950
+Wire Wire Line
+	5450 2050 5450 1950
+Wire Wire Line
+	5750 1950 5750 2050
+Wire Wire Line
+	5750 2050 5450 2050
+NoConn ~ 5250 1950
+NoConn ~ 5350 1950
+NoConn ~ 5550 1950
+NoConn ~ 5650 1950
+NoConn ~ 5850 1950
+NoConn ~ 5950 1950
+NoConn ~ 6050 1950
+NoConn ~ 6150 1950
+$Comp
+L Conn_01x03 DHT11
+U 1 1 62F85142
+P 7850 1900
+F 0 "DHT11" H 7850 2100 50  0000 C CNN
+F 1 "Conn_01x03" H 7850 1700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 7850 1900 50  0001 C CNN
+F 3 "" H 7850 1900 50  0001 C CNN
+	1    7850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 62F8521B
+P 7400 1800
+F 0 "#PWR10" H 7400 1550 50  0001 C CNN
+F 1 "GND" H 7400 1650 50  0000 C CNN
+F 2 "" H 7400 1800 50  0001 C CNN
+F 3 "" H 7400 1800 50  0001 C CNN
+	1    7400 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR11
+U 1 1 62F8523B
+P 7400 2000
+F 0 "#PWR11" H 7400 1850 50  0001 C CNN
+F 1 "+5V" H 7400 2140 50  0000 C CNN
+F 2 "" H 7400 2000 50  0001 C CNN
+F 3 "" H 7400 2000 50  0001 C CNN
+	1    7400 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 1800 7650 1800
+Wire Wire Line
+	7400 2000 7650 2000
+Wire Wire Line
+	7650 1900 7050 1900
+Wire Wire Line
+	7050 1900 7050 2550
+Wire Wire Line
+	7050 2550 6450 2550
+Wire Wire Line
+	6450 2550 6450 2700
+Wire Wire Line
+	6450 2700 6300 2700
+$Comp
+L 2N3904 Q1
+U 1 1 62F85345
+P 4600 1350
+F 0 "Q1" H 4800 1425 50  0000 L CNN
+F 1 "2N3904" H 4800 1350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 4800 1275 50  0001 L CIN
+F 3 "" H 4600 1350 50  0001 L CNN
+	1    4600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 62F854A9
+P 4700 1650
+F 0 "#PWR4" H 4700 1400 50  0001 C CNN
+F 1 "GND" H 4700 1500 50  0000 C CNN
+F 2 "" H 4700 1650 50  0001 C CNN
+F 3 "" H 4700 1650 50  0001 C CNN
+	1    4700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1550 4700 1650
+Wire Wire Line
+	4400 1350 4400 2800
+Wire Wire Line
+	4400 2800 5100 2800
+Wire Wire Line
+	7000 1400 7950 1400
+Wire Wire Line
+	7000 1400 7000 2500
+Wire Wire Line
+	7000 2500 6400 2500
+Wire Wire Line
+	6400 2500 6400 2600
+Wire Wire Line
+	6400 2600 6300 2600
+$Comp
+L Conn_01x02 Power5V1
+U 1 1 62F85A4F
+P 4500 3150
+F 0 "Power5V1" H 4500 3250 50  0000 C CNN
+F 1 "Conn_01x02" H 4500 2950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 4500 3150 50  0001 C CNN
+F 3 "" H 4500 3150 50  0001 C CNN
+	1    4500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 62F85AB2
+P 4300 3250
+F 0 "#PWR2" H 4300 3000 50  0001 C CNN
+F 1 "GND" H 4300 3100 50  0000 C CNN
+F 2 "" H 4300 3250 50  0001 C CNN
+F 3 "" H 4300 3250 50  0001 C CNN
+	1    4300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 62F85ADA
+P 4300 3150
+F 0 "#PWR1" H 4300 3000 50  0001 C CNN
+F 1 "+5V" H 4300 3290 50  0000 C CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 ToButtons1
+U 1 1 62F97651
+P 8150 1300
+F 0 "ToButtons1" H 8150 1400 50  0000 C CNN
+F 1 "Conn_01x02" H 8150 1100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 8150 1300 50  0001 C CNN
+F 3 "" H 8150 1300 50  0001 C CNN
+	1    8150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1300 6950 1300
+Wire Wire Line
+	6950 1300 6950 2450
+Wire Wire Line
+	6950 2450 6300 2450
+Wire Wire Line
+	6300 2450 6300 2500
+NoConn ~ 6300 2400
+NoConn ~ 6300 3700
+NoConn ~ 6300 3800
+NoConn ~ 6300 3900
+NoConn ~ 6300 4000
+NoConn ~ 5100 4000
+NoConn ~ 5100 3900
+NoConn ~ 5100 3700
+NoConn ~ 5100 3500
+NoConn ~ 5100 3400
+NoConn ~ 5100 3300
+NoConn ~ 5100 3200
+NoConn ~ 5100 3100
+NoConn ~ 5100 3000
+NoConn ~ 5100 2900
+NoConn ~ 5100 2700
+NoConn ~ 5100 2600
+NoConn ~ 5100 2500
+NoConn ~ 5100 2400
+$Comp
+L ABX00028 IC1
+U 1 1 62FA9015
+P 5100 2400
+F 0 "IC1" H 6850 2700 50  0000 L CNN
+F 1 "ABX00028" H 6850 2600 50  0000 L CNN
+F 2 "Custom_PCB_Stuff:Arduino_Nano" H 6850 2500 50  0001 L CNN
+F 3 "https://store.arduino.cc/arduino-nano-every" H 6850 2400 50  0001 L CNN
+F 4 "Development Boards & Kits - AVR Arduino Nano Every" H 6850 2300 50  0001 L CNN "Description"
+F 5 "10" H 6850 2200 50  0001 L CNN "Height"
+F 6 "Arduino" H 6850 2100 50  0001 L CNN "Manufacturer_Name"
+F 7 "ABX00028" H 6850 2000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "782-ABX00028" H 6850 1900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Arduino/ABX00028?qs=PzGy0jfpSMtit6rnFl8mVg%3D%3D" H 6850 1800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ABX00028" H 6850 1700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/abx00028/arduino-corporation?region=nac" H 6850 1600 50  0001 L CNN "Arrow Price/Stock"
+	1    5100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1150 4950 1150
+Wire Wire Line
+	4950 1150 4950 2150
+Wire Wire Line
+	4950 2150 5150 2150
+Wire Wire Line
+	5150 2150 5150 1950
+$EndSCHEMATC
